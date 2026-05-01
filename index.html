@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halima's Cakes | Artisan Cakes & Cake Pops</title>
+    <meta name="description" content="Order stunning custom cakes, cake pops, and desserts online. Handcrafted with love by Halima's Cakes.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader">
+            <div class="cake-icon">🎂</div>
+            <p>Baking something sweet...</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-icon">🧁</span>
+                <span class="logo-text">Halima's <span class="accent">Cakes</span></span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#cake-pops">Cake Pops</a></li>
+                <li><a href="#custom">Custom Orders</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#testimonials">Reviews</a></li>
+                <li><a href="#order">Order Now</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="cart-btn" id="cartBtn">
+                    <span class="cart-icon">🛒</span>
+                    <span class="cart-count" id="cartCount">0</span>
+                </button>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-particles" id="particles"></div>
+        <div class="hero-content">
+            <div class="hero-badge animate-fade-in">✨ Handcrafted with Love ✨</div>
+            <h1 class="hero-title animate-slide-up">
+                <span class="line1">Life is Short,</span>
+                <span class="line2">Eat <span class="highlight">Cake</span></span>
+            </h1>
+            <p class="hero-subtitle animate-slide-up delay-1">
+                Artisan cakes, cake pops & desserts made fresh for every celebration. 
+                From birthdays to weddings, we make your sweetest dreams come true.
+            </p>
+            <div class="hero-cta animate-slide-up delay-2">
+                <a href="#order" class="btn btn-primary btn-lg">
+                    <span>Order Now</span>
+                    <span class="btn-sparkle">✨</span>
+                </a>
+                <a href="#menu" class="btn btn-outline btn-lg">View Menu</a>
+            </div>
+            <div class="hero-stats animate-fade-in delay-3">
+                <div class="stat">
+                    <span class="stat-number" data-count="500">0</span>+
+                    <span class="stat-label">Happy Customers</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-count="50">0</span>+
+                    <span class="stat-label">Cake Flavors</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-count="1000">0</span>+
+                    <span class="stat-label">Orders Delivered</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual animate-float">
+            <div class="hero-cake-display">
+                <div class="floating-element el-1">🍰</div>
+                <div class="floating-element el-2">🧁</div>
+                <div class="floating-element el-3">🍪</div>
+                <div class="floating-element el-4">🎂</div>
+                <div class="floating-element el-5">🍩</div>
+            </div>
+        </div>
+        <div class="hero-wave">
+            <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+                <path d="M0,60 C360,120 720,0 1080,60 C1260,90 1380,60 1440,60 L1440,120 L0,120 Z" fill="var(--bg-primary)"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Featured Categories -->
+    <section id="categories" class="categories section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Our Specialties</span>
+                <h2 class="section-title">What We <span class="accent">Offer</span></h2>
+                <p class="section-subtitle">From classic flavors to custom creations, we have something for every sweet tooth</p>
+            </div>
+            <div class="categories-grid">
+                <div class="category-card" data-category="birthday">
+                    <div class="category-icon">🎂</div>
+                    <h3>Birthday Cakes</h3>
+                    <p>Make their day unforgettable with our stunning birthday creations</p>
+                    <a href="#menu" class="category-link">Explore →</a>
+                </div>
+                <div class="category-card" data-category="wedding">
+                    <div class="category-icon">💒</div>
+                    <h3>Wedding Cakes</h3>
+                    <p>Elegant multi-tier masterpieces for your perfect day</p>
+                    <a href="#menu" class="category-link">Explore →</a>
+                </div>
+                <div class="category-card" data-category="cakepops">
+                    <div class="category-icon">🍭</div>
+                    <h3>Cake Pops</h3>
+                    <p>Bite-sized balls of joy in endless flavors and designs</p>
+                    <a href="#cake-pops" class="category-link">Explore →</a>
+                </div>
+                <div class="category-card" data-category="cupcakes">
+                    <div class="category-icon">🧁</div>
+                    <h3>Cupcakes</h3>
+                    <p>Perfect individual portions topped with artisan frosting</p>
+                    <a href="#menu" class="category-link">Explore →</a>
+                </div>
+                <div class="category-card" data-category="custom">
+                    <div class="category-icon">🎨</div>
+                    <h3>Custom Cakes</h3>
+                    <p>Your imagination, our expertise. Fully customizable designs</p>
+                    <a href="#custom" class="category-link">Explore →</a>
+                </div>
+                <div class="category-card" data-category="seasonal">
+                    <div class="category-icon">🌸</div>
+                    <h3>Seasonal Specials</h3>
+                    <p>Limited edition flavors that celebrate every season</p>
+                    <a href="#menu" class="category-link">Explore →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Delicious Selection</span>
+                <h2 class="section-title">Our <span class="accent">Menu</span></h2>
+                <p class="section-subtitle">Every cake is baked fresh with premium ingredients</p>
+            </div>
+            
+            <!-- Menu Filter -->
+            <div class="menu-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="classic">Classic</button>
+                <button class="filter-btn" data-filter="chocolate">Chocolate</button>
+                <button class="filter-btn" data-filter="fruit">Fruit</button>
+                <button class="filter-btn" data-filter="specialty">Specialty</button>
+                <button class="filter-btn" data-filter="vegan">Vegan</button>
+            </div>
+
+            <!-- Menu Grid -->
+            <div class="menu-grid" id="menuGrid">
+                <!-- Classic Cakes -->
+                <div class="product-card" data-category="classic" data-id="1">
+                    <div class="product-badge bestseller">Bestseller</div>
+                    <div class="product-image" style="background: linear-gradient(135deg, #FFF5E6, #FFE4B5);">
+                        <span class="product-emoji">🎂</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Classic Vanilla Dream</h3>
+                        <p class="product-desc">Light & fluffy vanilla sponge with silky buttercream frosting</p>
+                        <div class="product-meta">
+                            <span class="product-size">6" / 8" / 10"</span>
+                            <span class="product-rating">⭐ 4.9</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">From $35</span>
+                            <button class="add-to-cart-btn" data-id="1" data-name="Classic Vanilla Dream" data-price="35">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="chocolate" data-id="2">
+                    <div class="product-badge popular">Popular</div>
+                    <div class="product-image" style="background: linear-gradient(135deg, #3D1C02, #6B3A2A);">
+                        <span class="product-emoji">🍫</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Death by Chocolate</h3>
+                        <p class="product-desc">Triple chocolate layers with ganache, fudge & chocolate shavings</p>
+                        <div class="product-meta">
+                            <span class="product-size">6" / 8" / 10"</span>
+                            <span class="product-rating">⭐ 5.0</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">From $40</span>
+                            <button class="add-to-cart-btn" data-id="2" data-name="Death by Chocolate" data-price="40">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="fruit" data-id="3">
+                    <div class="product-image" style="background: linear-gradient(135deg, #FFE4E1, #FFC0CB);">
+                        <span class="product-emoji">🍓</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Strawberry Bliss</h3>
+                        <p class="product-desc">Fresh strawberry layers with cream cheese frosting & berry compote</p>
+                        <div class="product-meta">
+                            <span class="product-size">6" / 8" / 10"</span>
+                            <span class="product-rating">⭐ 4.8</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">From $38</span>
+                            <button class="add-to-cart-btn" data-id="3" data-name="Strawberry Bliss" data-price="38">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="specialty" data-id="4">
+                    <div class="product-badge new">New!</div>
+                    <div class="product-image" style="background: linear-gradient(135deg, #E8D5B7, #C9A96E);">
+                        <span class="product-emoji">🥐</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Salted Caramel Drip</h3>
+                        <p class="product-desc">Caramel sponge with salted caramel drip & gold leaf accents</p>
+                        <div class="product-meta">
+                            <span class="product-size">6" / 8" / 10"</span>
+                            <span class="product-rating">⭐ 4.9</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">From $45</span>
+                            <button class="add-to-cart-btn" data-id="4" data-name="Salted Caramel Drip" data-price="45">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="classic" data-id="5">
+                    <div class="product-image" style="background: linear-gradient(135deg, #FFF8DC, #FAFAD2);">
+                        <span class="product-emoji">🍋</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Lemon Elderflower</h3>
+                        <p class="product-desc">Zesty lemon cake with elderflower syrup & white chocolate ganache</p>
+                        <div class="product-meta">
+                            <span class="product-size">6" / 8" / 10"</span>
+                            <span class="product-rating">⭐ 4.7</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">From $38</span>
+                            <button class="add-to-cart-btn" data-id="5" data-name="Lemon Elderflower" data-price="38">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="chocolate" data-id="6">
+                    <div class="product-image" style="background: linear-gradient(135deg, #8B4513, #D2691E);">
+                        <span class="product-emoji">🌰</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Nutella Hazelnut Tower</h3>
+                        <p class="product-desc">Chocolate hazelnut layers with Nutella frosting & candied hazelnuts</p>
+                        <div class="product-meta">
+                            <span class="product-size">6" / 8" / 10"</span>
+                            <span class="product-rating">⭐ 4.9</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">From $42</span>
+                            <button class="add-to-cart-btn" data-id="6" data-name="Nutella Hazelnut Tower" data-price="42">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="fruit" data-id="7">
+                    <div class="product-image" style="background: linear-gradient(135deg, #E6E6FA, #DDA0DD);">
+                        <span class="product-emoji">🫐</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Blueberry Lavender</h3>
+                        <p class="product-desc">Delicate lavender cake with blueberry compote & cream cheese frosting</p>
+                        <div class="product-meta">
+                            <span class="product-size">6" / 8" / 10"</span>
+                            <span class="product-rating">⭐ 4.8</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">From $40</span>
+                            <button class="add-to-cart-btn" data-id="7" data-name="Blueberry Lavender" data-price="40">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="specialty" data-id="8">
+                    <div class="product-badge bestseller">Bestseller</div>
+                    <div class="product-image" style="background: linear-gradient(135deg, #F0FFF0, #90EE90);">
+                        <span class="product-emoji">🍵</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Matcha Green Tea</h3>
+                        <p class="product-desc">Japanese matcha sponge with white chocolate frosting & mochi</p>
+                        <div class="product-meta">
+                            <span class="product-size">6" / 8" / 10"</span>
+                            <span class="product-rating">⭐ 4.9</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">From $42</span>
+                            <button class="add-to-cart-btn" data-id="8" data-name="Matcha Green Tea" data-price="42">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="vegan" data-id="9">
+                    <div class="product-badge new">Vegan</div>
+                    <div class="product-image" style="background: linear-gradient(135deg, #FFEFD5, #F5DEB3);">
+                        <span class="product-emoji">🥥</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Coconut Paradise</h3>
+                        <p class="product-desc">Vegan coconut cake with cashew cream frosting & toasted coconut</p>
+                        <div class="product-meta">
+                            <span class="product-size">6" / 8" / 10"</span>
+                            <span class="product-rating">⭐ 4.7</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">From $40</span>
+                            <button class="add-to-cart-btn" data-id="9" data-name="Coconut Paradise" data-price="40">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="specialty" data-id="10">
+                    <div class="product-image" style="background: linear-gradient(135deg, #FFE4E1, #FF69B4);">
+                        <span class="product-emoji">🌹</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Rose Pistachio</h3>
+                        <p class="product-desc">Rosewater sponge with pistachio cream & edible rose petals</p>
+                        <div class="product-meta">
+                            <span class="product-size">6" / 8" / 10"</span>
+                            <span class="product-rating">⭐ 5.0</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">From $45</span>
+                            <button class="add-to-cart-btn" data-id="10" data-name="Rose Pistachio" data-price="45">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="chocolate" data-id="11">
+                    <div class="product-image" style="background: linear-gradient(135deg, #2F1B14, #5C3317);">
+                        <span class="product-emoji">🖤</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Dark Chocolate Truffle</h3>
+                        <p class="product-desc">Rich 70% dark chocolate with truffle filling & cocoa dust</p>
+                        <div class="product-meta">
+                            <span class="product-size">6" / 8" / 10"</span>
+                            <span class="product-rating">⭐ 4.9</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">From $44</span>
+                            <button class="add-to-cart-btn" data-id="11" data-name="Dark Chocolate Truffle" data-price="44">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="vegan" data-id="12">
+                    <div class="product-image" style="background: linear-gradient(135deg, #FFF8DC, #DAA520);">
+                        <span class="product-emoji">🍌</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Vegan Banana Walnut</h3>
+                        <p class="product-desc">Moist banana cake with walnut crumble & maple cream frosting</p>
+                        <div class="product-meta">
+                            <span class="product-size">6" / 8" / 10"</span>
+                            <span class="product-rating">⭐ 4.6</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">From $36</span>
+                            <button class="add-to-cart-btn" data-id="12" data-name="Vegan Banana Walnut" data-price="36">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cake Pops Section -->
+    <section id="cake-pops" class="cake-pops section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Bite-Sized Joy</span>
+                <h2 class="section-title">Cake <span class="accent">Pops</span></h2>
+                <p class="section-subtitle">Perfect for parties, gifts, or just treating yourself!</p>
+            </div>
+
+            <div class="cakepops-showcase">
+                <div class="cakepop-card" data-id="cp1">
+                    <div class="cakepop-visual" style="background: linear-gradient(135deg, #FFB6C1, #FF69B4);">
+                        <span class="cakepop-emoji">🍭</span>
+                        <div class="cakepop-sprinkles"></div>
+                    </div>
+                    <div class="cakepop-info">
+                        <h3>Classic Vanilla</h3>
+                        <p>Vanilla cake dipped in white chocolate with rainbow sprinkles</p>
+                        <div class="cakepop-pricing">
+                            <span class="price">$3.50 each</span>
+                            <span class="dozen">$36 / dozen</span>
+                        </div>
+                        <button class="add-to-cart-btn" data-id="cp1" data-name="Vanilla Cake Pop (dozen)" data-price="36">Add Dozen</button>
+                    </div>
+                </div>
+
+                <div class="cakepop-card" data-id="cp2">
+                    <div class="cakepop-visual" style="background: linear-gradient(135deg, #4A2C17, #8B4513);">
+                        <span class="cakepop-emoji">🍫</span>
+                        <div class="cakepop-sprinkles"></div>
+                    </div>
+                    <div class="cakepop-info">
+                        <h3>Double Chocolate</h3>
+                        <p>Rich chocolate cake dipped in dark chocolate with gold dust</p>
+                        <div class="cakepop-pricing">
+                            <span class="price">$3.50 each</span>
+                            <span class="dozen">$36 / dozen</span>
+                        </div>
+                        <button class="add-to-cart-btn" data-id="cp2" data-name="Chocolate Cake Pop (dozen)" data-price="36">Add Dozen</button>
+                    </div>
+                </div>
+
+                <div class="cakepop-card" data-id="cp3">
+                    <div class="cakepop-visual" style="background: linear-gradient(135deg, #FFD700, #FFA500);">
+                        <span class="cakepop-emoji">🎉</span>
+                        <div class="cakepop-sprinkles"></div>
+                    </div>
+                    <div class="cakepop-info">
+                        <h3>Birthday Confetti</h3>
+                        <p>Funfetti cake pop coated in colorful candy melts</p>
+                        <div class="cakepop-pricing">
+                            <span class="price">$4.00 each</span>
+                            <span class="dozen">$42 / dozen</span>
+                        </div>
+                        <button class="add-to-cart-btn" data-id="cp3" data-name="Birthday Confetti Pop (dozen)" data-price="42">Add Dozen</button>
+                    </div>
+                </div>
+
+                <div class="cakepop-card" data-id="cp4">
+                    <div class="cakepop-visual" style="background: linear-gradient(135deg, #FF6B6B, #EE5A24);">
+                        <span class="cakepop-emoji">🍓</span>
+                        <div class="cakepop-sprinkles"></div>
+                    </div>
+                    <div class="cakepop-info">
+                        <h3>Red Velvet</h3>
+                        <p>Red velvet cake dipped in cream cheese coating with heart sprinkles</p>
+                        <div class="cakepop-pricing">
+                            <span class="price">$4.00 each</span>
+                            <span class="dozen">$42 / dozen</span>
+                        </div>
+                        <button class="add-to-cart-btn" data-id="cp4" data-name="Red Velvet Cake Pop (dozen)" data-price="42">Add Dozen</button>
+                    </div>
+                </div>
+
+                <div class="cakepop-card" data-id="cp5">
+                    <div class="cakepop-visual" style="background: linear-gradient(135deg, #98FB98, #3CB371);">
+                        <span class="cakepop-emoji">🍵</span>
+                        <div class="cakepop-sprinkles"></div>
+                    </div>
+                    <div class="cakepop-info">
+                        <h3>Matcha White Choc</h3>
+                        <p>Matcha green tea cake with white chocolate & matcha powder dusting</p>
+                        <div class="cakepop-pricing">
+                            <span class="price">$4.50 each</span>
+                            <span class="dozen">$48 / dozen</span>
+                        </div>
+                        <button class="add-to-cart-btn" data-id="cp5" data-name="Matcha Cake Pop (dozen)" data-price="48">Add Dozen</button>
+                    </div>
+                </div>
+
+                <div class="cakepop-card" data-id="cp6">
+                    <div class="cakepop-visual" style="background: linear-gradient(135deg, #DDA0DD, #9370DB);">
+                        <span class="cakepop-emoji">🦄</span>
+                        <div class="cakepop-sprinkles"></div>
+                    </div>
+                    <div class="cakepop-info">
+                        <h3>Unicorn Magic</h3>
+                        <p>Rainbow swirl cake with iridescent coating & edible glitter</p>
+                        <div class="cakepop-pricing">
+                            <span class="price">$5.00 each</span>
+                            <span class="dozen">$54 / dozen</span>
+                        </div>
+                        <button class="add-to-cart-btn" data-id="cp6" data-name="Unicorn Cake Pop (dozen)" data-price="54">Add Dozen</button>
+                    </div>
+                </div>
+
+                <div class="cakepop-card" data-id="cp7">
+                    <div class="cakepop-visual" style="background: linear-gradient(135deg, #F5DEB3, #D2691E);">
+                        <span class="cakepop-emoji">🥜</span>
+                        <div class="cakepop-sprinkles"></div>
+                    </div>
+                    <div class="cakepop-info">
+                        <h3>Peanut Butter Cup</h3>
+                        <p>Peanut butter cake dipped in chocolate with PB drizzle</p>
+                        <div class="cakepop-pricing">
+                            <span class="price">$4.00 each</span>
+                            <span class="dozen">$42 / dozen</span>
+                        </div>
+                        <button class="add-to-cart-btn" data-id="cp7" data-name="Peanut Butter Cake Pop (dozen)" data-price="42">Add Dozen</button>
+                    </div>
+                </div>
+
+                <div class="cakepop-card" data-id="cp8">
+                    <div class="cakepop-visual" style="background: linear-gradient(135deg, #FFDAB9, #FF8C00);">
+                        <span class="cakepop-emoji">🍑</span>
+                        <div class="cakepop-sprinkles"></div>
+                    </div>
+                    <div class="cakepop-info">
+                        <h3>Peach Bellini</h3>
+                        <p>Peach cake with champagne glaze & edible flower decoration</p>
+                        <div class="cakepop-pricing">
+                            <span class="price">$5.00 each</span>
+                            <span class="dozen">$54 / dozen</span>
+                        </div>
+                        <button class="add-to-cart-btn" data-id="cp8" data-name="Peach Bellini Cake Pop (dozen)" data-price="54">Add Dozen</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cake Pop Bundles -->
+            <div class="bundles-section">
+                <h3 class="bundles-title">🎁 Special Bundles</h3>
+                <div class="bundles-grid">
+                    <div class="bundle-card">
+                        <div class="bundle-icon">🎉</div>
+                        <h4>Party Pack</h4>
+                        <p>24 assorted cake pops - perfect for parties!</p>
+                        <span class="bundle-price">$65</span>
+                        <button class="add-to-cart-btn" data-id="bundle1" data-name="Party Pack (24 pops)" data-price="65">Add to Cart</button>
+                    </div>
+                    <div class="bundle-card featured">
+                        <div class="bundle-badge">Best Value</div>
+                        <div class="bundle-icon">🏆</div>
+                        <h4>Mega Box</h4>
+                        <p>48 assorted cake pops + display stand</p>
+                        <span class="bundle-price">$120</span>
+                        <button class="add-to-cart-btn" data-id="bundle2" data-name="Mega Box (48 pops)" data-price="120">Add to Cart</button>
+                    </div>
+                    <div class="bundle-card">
+                        <div class="bundle-icon">💝</div>
+                        <h4>Gift Box</h4>
+                        <p>12 premium pops in a luxury gift box</p>
+                        <span class="bundle-price">$45</span>
+                        <button class="add-to-cart-btn" data-id="bundle3" data-name="Gift Box (12 pops)" data-price="45">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Custom Orders Section -->
+    <section id="custom" class="custom-orders section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Dream It, We Bake It</span>
+                <h2 class="section-title">Custom <span class="accent">Orders</span></h2>
+                <p class="section-subtitle">From themed birthday cakes to elaborate wedding centerpieces</p>
+            </div>
+
+            <div class="custom-features">
+                <div class="custom-feature">
+                    <div class="feature-icon">🎨</div>
+                    <h3>Any Design</h3>
+                    <p>Send us your inspiration and we'll bring it to life</p>
+                </div>
+                <div class="custom-feature">
+                    <div class="feature-icon">📏</div>
+                    <h3>Any Size</h3>
+                    <p>From intimate 4" cakes to grand 5-tier showstoppers</p>
+                </div>
+                <div class="custom-feature">
+                    <div class="feature-icon">🍽️</div>
+                    <h3>Any Flavor</h3>
+                    <p>Mix and match from 50+ flavors and fillings</p>
+                </div>
+                <div class="custom-feature">
+                    <div class="feature-icon">📅</div>
+                    <h3>Any Occasion</h3>
+                    <p>Birthdays, weddings, graduations, corporate events & more</p>
+                </div>
+            </div>
+
+            <div class="custom-tiers">
+                <div class="tier-card">
+                    <div class="tier-header">
+                        <h3>Simple Custom</h3>
+                        <span class="tier-price">From $55</span>
+                    </div>
+                    <ul class="tier-features">
+                        <li>✓ Choose your flavor</li>
+                        <li>✓ Choose your frosting color</li>
+                        <li>✓ Custom message on top</li>
+                        <li>✓ Basic decorations</li>
+                        <li>✓ 3-day notice required</li>
+                    </ul>
+                    <button class="btn btn-outline" onclick="document.getElementById('order').scrollIntoView({behavior: 'smooth'})">Order Now</button>
+                </div>
+                <div class="tier-card popular">
+                    <div class="tier-badge">Most Popular</div>
+                    <div class="tier-header">
+                        <h3>Themed Custom</h3>
+                        <span class="tier-price">From $85</span>
+                    </div>
+                    <ul class="tier-features">
+                        <li>✓ Everything in Simple</li>
+                        <li>✓ Custom theme design</li>
+                        <li>✓ Fondant decorations</li>
+                        <li>✓ Multi-flavor layers</li>
+                        <li>✓ Photo cake option</li>
+                        <li>✓ 5-day notice required</li>
+                    </ul>
+                    <button class="btn btn-primary" onclick="document.getElementById('order').scrollIntoView({behavior: 'smooth'})">Order Now</button>
+                </div>
+                <div class="tier-card">
+                    <div class="tier-header">
+                        <h3>Premium Custom</h3>
+                        <span class="tier-price">From $150</span>
+                    </div>
+                    <ul class="tier-features">
+                        <li>✓ Everything in Themed</li>
+                        <li>✓ Multi-tier designs</li>
+                        <li>✓ Sugar flowers & sculptures</li>
+                        <li>✓ Gold leaf & premium finishes</li>
+                        <li>✓ Consultation included</li>
+                        <li>✓ 7-day notice required</li>
+                    </ul>
+                    <button class="btn btn-outline" onclick="document.getElementById('order').scrollIntoView({behavior: 'smooth'})">Order Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Our Creations</span>
+                <h2 class="section-title">Sweet <span class="accent">Gallery</span></h2>
+                <p class="section-subtitle">A peek at some of our favorite creations</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item large">
+                    <div class="gallery-image" style="background: linear-gradient(135deg, #FFE4E1, #FF69B4);">
+                        <span class="gallery-emoji">🎂</span>
+                    </div>
+                    <div class="gallery-overlay">
+                        <span>3-Tier Wedding Cake</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-image" style="background: linear-gradient(135deg, #E6E6FA, #9370DB);">
+                        <span class="gallery-emoji">🧁</span>
+                    </div>
+                    <div class="gallery-overlay">
+                        <span>Galaxy Cupcakes</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-image" style="background: linear-gradient(135deg, #FFD700, #FF8C00);">
+                        <span class="gallery-emoji">🍭</span>
+                    </div>
+                    <div class="gallery-overlay">
+                        <span>Cake Pop Tower</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-image" style="background: linear-gradient(135deg, #98FB98, #3CB371);">
+                        <span class="gallery-emoji">🌿</span>
+                    </div>
+                    <div class="gallery-overlay">
+                        <span>Botanical Cake</span>
+                    </div>
+                </div>
+                <div class="gallery-item large">
+                    <div class="gallery-image" style="background: linear-gradient(135deg, #4A2C17, #8B4513);">
+                        <span class="gallery-emoji">🍫</span>
+                    </div>
+                    <div class="gallery-overlay">
+                        <span>Chocolate Drip Cake</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-image" style="background: linear-gradient(135deg, #87CEEB, #4169E1);">
+                        <span class="gallery-emoji">🦋</span>
+                    </div>
+                    <div class="gallery-overlay">
+                        <span>Butterfly Garden</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-image" style="background: linear-gradient(135deg, #FFC0CB, #FF1493);">
+                        <span class="gallery-emoji">🌸</span>
+                    </div>
+                    <div class="gallery-overlay">
+                        <span>Cherry Blossom Cake</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-image" style="background: linear-gradient(135deg, #F0E68C, #DAA520);">
+                        <span class="gallery-emoji">👑</span>
+                    </div>
+                    <div class="gallery-overlay">
+                        <span>Gold Crown Cake</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="testimonials section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Love Letters</span>
+                <h2 class="section-title">What People <span class="accent">Say</span></h2>
+                <p class="section-subtitle">Don't just take our word for it</p>
+            </div>
+            <div class="testimonials-slider" id="testimonialsSlider">
+                <div class="testimonial-card active">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"The wedding cake was absolutely breathtaking! Every guest asked where we got it. The flavors were divine and the design was even better than what we imagined."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">👩</div>
+                        <div>
+                            <strong>Sarah M.</strong>
+                            <span>Wedding Cake</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Ordered 100 cake pops for my daughter's birthday party and they were PERFECT! Every kid (and adult) loved them. Will definitely be ordering again!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">👨</div>
+                        <div>
+                            <strong>David K.</strong>
+                            <span>Birthday Cake Pops</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"The Death by Chocolate cake is life-changing. I've ordered it 5 times now and it's perfect every single time. Best bakery in town, hands down!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">👩</div>
+                        <div>
+                            <strong>Amira R.</strong>
+                            <span>Regular Customer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"I needed a custom unicorn cake for my niece with only 3 days notice. Not only did they deliver, but it exceeded all expectations. Pure magic!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">👩</div>
+                        <div>
+                            <strong>Jessica L.</strong>
+                            <span>Custom Order</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-nav">
+                <button class="testimonial-btn prev" id="prevTestimonial">←</button>
+                <div class="testimonial-dots" id="testimonialDots"></div>
+                <button class="testimonial-btn next" id="nextTestimonial">→</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Section -->
+    <section id="order" class="order-section section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Ready to Order?</span>
+                <h2 class="section-title">Place Your <span class="accent">Order</span></h2>
+                <p class="section-subtitle">Fill in the details below and we'll get back to you within 24 hours</p>
+            </div>
+
+            <div class="order-layout">
+                <!-- Order Form -->
+                <div class="order-form-container">
+                    <form id="orderForm" class="order-form">
+                        <div class="form-section">
+                            <h3 class="form-section-title">📋 Your Details</h3>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName">First Name *</label>
+                                    <input type="text" id="firstName" name="firstName" required placeholder="Your first name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Last Name *</label>
+                                    <input type="text" id="lastName" name="lastName" required placeholder="Your last name">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email">Email *</label>
+                                    <input type="email" id="email" name="email" required placeholder="your@email.com">
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone *</label>
+                                    <input type="tel" id="phone" name="phone" required placeholder="(555) 123-4567">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-section">
+                            <h3 class="form-section-title">🎂 Order Details</h3>
+                            <div class="form-group">
+                                <label for="orderType">Order Type *</label>
+                                <select id="orderType" name="orderType" required>
+                                    <option value="">Select order type...</option>
+                                    <option value="standard">Standard Menu Item</option>
+                                    <option value="cake-pops">Cake Pops</option>
+                                    <option value="custom-simple">Custom - Simple</option>
+                                    <option value="custom-themed">Custom - Themed</option>
+                                    <option value="custom-premium">Custom - Premium</option>
+                                    <option value="wedding">Wedding Cake</option>
+                                    <option value="cupcakes">Cupcakes</option>
+                                </select>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="flavor">Preferred Flavor</label>
+                                    <select id="flavor" name="flavor">
+                                        <option value="">Select flavor...</option>
+                                        <option value="vanilla">Vanilla</option>
+                                        <option value="chocolate">Chocolate</option>
+                                        <option value="red-velvet">Red Velvet</option>
+                                        <option value="strawberry">Strawberry</option>
+                                        <option value="lemon">Lemon</option>
+                                        <option value="carrot">Carrot</option>
+                                        <option value="coconut">Coconut</option>
+                                        <option value="matcha">Matcha</option>
+                                        <option value="caramel">Salted Caramel</option>
+                                        <option value="pistachio">Pistachio</option>
+                                        <option value="banana">Banana</option>
+                                        <option value="coffee">Coffee</option>
+                                        <option value="other">Other (specify in notes)</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="size">Size</label>
+                                    <select id="size" name="size">
+                                        <option value="">Select size...</option>
+                                        <option value="6inch">6" (serves 8-10)</option>
+                                        <option value="8inch">8" (serves 12-16)</option>
+                                        <option value="10inch">10" (serves 20-25)</option>
+                                        <option value="12inch">12" (serves 30-40)</option>
+                                        <option value="2tier">2-Tier</option>
+                                        <option value="3tier">3-Tier</option>
+                                        <option value="dozen-pops">Dozen Cake Pops</option>
+                                        <option value="24-pops">24 Cake Pops</option>
+                                        <option value="48-pops">48 Cake Pops</option>
+                                        <option value="dozen-cupcakes">Dozen Cupcakes</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="deliveryDate">Needed By *</label>
+                                <input type="date" id="deliveryDate" name="deliveryDate" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="notes">Special Instructions / Design Ideas</label>
+                                <textarea id="notes" name="notes" rows="4" placeholder="Tell us about your dream cake! Include theme, colors, any allergies, and inspiration..."></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="budget">Budget Range</label>
+                                <select id="budget" name="budget">
+                                    <option value="">Select budget...</option>
+                                    <option value="30-50">$30 - $50</option>
+                                    <option value="50-80">$50 - $80</option>
+                                    <option value="80-120">$80 - $120</option>
+                                    <option value="120-200">$120 - $200</option>
+                                    <option value="200+">$200+</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-section">
+                            <h3 class="form-section-title">🚚 Delivery</h3>
+                            <div class="form-group">
+                                <label for="delivery">Delivery Method *</label>
+                                <select id="delivery" name="delivery" required>
+                                    <option value="">Select delivery...</option>
+                                    <option value="pickup">Pickup (Free)</option>
+                                    <option value="delivery-local">Local Delivery ($10)</option>
+                                    <option value="delivery-extended">Extended Delivery ($20)</option>
+                                </select>
+                            </div>
+                            <div class="form-group" id="addressGroup" style="display: none;">
+                                <label for="address">Delivery Address</label>
+                                <textarea id="address" name="address" rows="2" placeholder="Full delivery address..."></textarea>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-lg btn-full">
+                            <span>Submit Order Request</span>
+                            <span class="btn-sparkle">🎂</span>
+                        </button>
+                        <p class="form-note">* We'll confirm your order and final price via email within 24 hours</p>
+                    </form>
+                </div>
+
+                <!-- Order Summary / Cart -->
+                <div class="order-sidebar">
+                    <div class="cart-summary" id="cartSummary">
+                        <h3>🛒 Your Cart</h3>
+                        <div class="cart-items" id="cartItems">
+                            <div class="cart-empty">
+                                <span>🧁</span>
+                                <p>Your cart is empty</p>
+                                <small>Browse our menu and add items!</small>
+                            </div>
+                        </div>
+                        <div class="cart-total" id="cartTotal" style="display: none;">
+                            <div class="total-row">
+                                <span>Subtotal:</span>
+                                <span id="subtotal">$0</span>
+                            </div>
+                            <div class="total-row grand">
+                                <span>Estimated Total:</span>
+                                <span id="grandTotal">$0</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-outline btn-full clear-cart-btn" id="clearCartBtn" style="display: none;">Clear Cart</button>
+                    </div>
+
+                    <div class="order-info-card">
+                        <h4>📞 Questions?</h4>
+                        <p>Need help with your order?</p>
+                        <a href="mailto:hello@halimascakes.com" class="info-link">hello@halimascakes.com</a>
+                        <a href="tel:+15551234567" class="info-link">+1 (555) 123-4567</a>
+                    </div>
+
+                    <div class="order-info-card">
+                        <h4>⏰ Order Timing</h4>
+                        <ul class="timing-list">
+                            <li>Standard orders: 3 days notice</li>
+                            <li>Custom themed: 5 days notice</li>
+                            <li>Premium/Wedding: 7+ days notice</li>
+                            <li>Rush orders: +50% fee</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-wave">
+            <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+                <path d="M0,60 C360,0 720,120 1080,60 C1260,30 1380,60 1440,60 L1440,0 L0,0 Z" fill="var(--bg-primary)"/>
+            </svg>
+        </div>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3><span class="logo-icon">🧁</span> Halima's Cakes</h3>
+                    <p>Handcrafted cakes & cake pops made with love, premium ingredients, and a whole lot of passion.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Instagram">📸</a>
+                        <a href="#" class="social-link" aria-label="Facebook">👤</a>
+                        <a href="#" class="social-link" aria-label="TikTok">🎵</a>
+                        <a href="#" class="social-link" aria-label="Pinterest">📌</a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#cake-pops">Cake Pops</a></li>
+                        <li><a href="#custom">Custom Orders</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#order">Order Now</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Information</h4>
+                    <ul>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#delivery">Delivery Info</a></li>
+                        <li><a href="#allergens">Allergen Info</a></li>
+                        <li><a href="#terms">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p>📍 123 Sweet Street, Bakery Lane</p>
+                    <p>📧 hello@halimascakes.com</p>
+                    <p>📞 +1 (555) 123-4567</p>
+                    <p>🕐 Mon-Sat: 8am - 6pm</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Halima's Cakes. All rights reserved. Made with 💖 and lots of frosting.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Order Success Modal -->
+    <div class="modal" id="successModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <div class="modal-icon">🎉</div>
+            <h2>Order Submitted!</h2>
+            <p>Thank you for your order! We'll review your request and send a confirmation email within 24 hours with the final details and pricing.</p>
+            <button class="btn btn-primary" onclick="closeModal()">Sweet!</button>
+        </div>
+    </div>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
